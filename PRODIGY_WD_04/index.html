@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo2-copy.png">
+    <title>Yashank Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/133346d88f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo2-copy(custom).png" class="logo" alt=".logo">
+                <ul id="sidemenu">
+                    <li><a class="active" href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hey There!</p>
+                <h1>I'm <span>Yashank Gawande</span><br>From INDIA</h1>
+                <p>Passionate About Coding and Web-Development</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/image.png" alt=".image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! 👋I'm Yashank Gawande, a dedicated web developer
+                        and cybersecurity enthusiast with a passion for digital
+                        experiences that seamlessly blend innovation and security</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Coder</span><br>Crafting Elegant and Efficient Code</li>
+                            <li><span>Web Development</span><br>Building Intuative and User-Friendly Websites</li>
+                            <li><span>Cyber Security</span><br>Securing Digital Landscapes with Precision</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec 2023 - Jan 2024</span><br>Web Development Intern at Prodigy InfoTech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>B.E. from Dr. D. Y. Patil Institute of Technology, Pune</li>
+                            <li><span>2020</span><br>HSC from St. Paul Junior College, Nagpur.</li>
+                            <li><span>2018</span><br>SSC from Tip Top Convent, Nagpur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding</h2>
+                    <p>Stay Tuned!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>Stay Tuned!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Stay Tuned!</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work1copy(custom).jpg" alt="work.image">
+                    <div class="layer">
+                        <h3>Simple E-commerce Demo</h3>
+                        <p>proYOG Collections is a Web Development project that server as a prototype 
+                            for an e-commerce website catering to the needs of yoga enthusiasts.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work2copy(custom).jpg" alt="work.image">
+                    <div class="layer">
+                        <h3>Stay Tuned!</h3>
+                        <p>Projects on the way...</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="">See More</a> -->
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> emailid@email.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="" class="btn ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p><small>An Initiative By <span class="company-name">SPARK</span> Industries &copy;</small></p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+
+
+
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(",input", {
+            strings:["Yashank Gawande", "Web Developer", "Coder"],
+            typespeed:70,
+            backspeed:65,
+            loop:true
+        })
+    </script> -->
+</body>
+</html>
